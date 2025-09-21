@@ -195,7 +195,7 @@ starlight-file-tree:where(.astro-p67cqifm){--x-space: 1.5rem;--y-space: .125rem;
 
 
 
-<table><thead><tr><th><u>ID</u></th><th>Name</th><th>Fakultät</th></tr></thead><tbody><tr><td>1</td><td>C#</td><td>2</td></tr><tr><td>2</td><td>Zeichnen</td><td>1</td></tr></tbody></table> </div>
+<table><thead><tr><th><u>ID</u></th><th>Name</th><th>Fakultät</th></tr></thead><tbody><tr><td>1</td><td>C#</td><td>1</td></tr><tr><td>2</td><td>Zeichnen</td><td>4</td></tr></tbody></table> </div>
 <div class="sqlTableLayout astro-2ef2knxv"> <p class="tableTitle astro-2ef2knxv">Studiengang</p> 
 
 
@@ -221,7 +221,7 @@ starlight-file-tree:where(.astro-p67cqifm){--x-space: 1.5rem;--y-space: .125rem;
 
 
 
-<table><thead><tr><th><u>ID</u></th><th>Name</th><th>Fakultät</th></tr></thead><tbody><tr><td>1</td><td>MIB</td><td>1</td></tr><tr><td>2</td><td>OMB</td><td>1</td></tr><tr><td>3</td><td>MKB</td><td>1</td></tr></tbody></table> </div>
+<table><thead><tr><th><u>ID</u></th><th>Name</th><th>Fakultät</th></tr></thead><tbody><tr><td>1</td><td>MIB</td><td>1</td></tr><tr><td>2</td><td>OMB</td><td>4</td></tr><tr><td>3</td><td>MKB</td><td>4</td></tr></tbody></table> </div>
 <div class="sqlTableLayout astro-2ef2knxv"> <p class="tableTitle astro-2ef2knxv">Fakultät</p> 
 
 
@@ -239,7 +239,7 @@ starlight-file-tree:where(.astro-p67cqifm){--x-space: 1.5rem;--y-space: .125rem;
 
 
 
-<table><thead><tr><th><u>ID</u></th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>DM</td></tr><tr><td>2</td><td>IN</td></tr></tbody></table> </div>
+<table><thead><tr><th><u>ID</u></th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>Computer Science &#x26; Applications</td></tr><tr><td>4</td><td>Business, Design &#x26; Media</td></tr></tbody></table> </div>
 <div class="sqlTableLayout astro-2ef2knxv"> <p class="tableTitle astro-2ef2knxv">Belegung</p> 
 
 
@@ -260,7 +260,7 @@ starlight-file-tree:where(.astro-p67cqifm){--x-space: 1.5rem;--y-space: .125rem;
 <table><thead><tr><th><u>Student</u></th><th><u>Veranstaltung</u></th></tr></thead><tbody><tr><td>123456</td><td>1</td></tr><tr><td>123456</td><td>2</td></tr></tbody></table> </div>
 <h3 id="normalisierung">Normalisierung</h3>
 <p>Normalisierung reduziert Redundanzen. Wenn der gleiche Wert nicht mehrfach gespeichert wird, verhindert dies ungleiche Angaben zur gleichen Information also Inkonsistenzen.</p>
-<p>Beispiel: DM steht in der nachfolgenden Tabelle mehrfach und könnte an einer Stelle als Abkürzung “DM” und an einer anderen ausgeschrieben “Digitale Medien” eingetragen sein.</p>
+<p>Beispiel: “Business, Design &#x26; Media” steht in der nachfolgenden Tabelle mehrfach und könnte an einer Stelle als “Fakultät 4” und an einer anderen als “Business, Design &#x26; Media” eingetragen sein.</p>
 <p>Die ersten drei von fünf Stufen der Normalisierung umfassen:</p>
 <ol>
 <li>Normalform:
@@ -330,7 +330,7 @@ starlight-file-tree:where(.astro-p67cqifm){--x-space: 1.5rem;--y-space: .125rem;
 
 
 
-<table><thead><tr><th><u>MatrikelNr</u></th><th>Name</th><th>Studiengang</th><th>Fakultät</th><th>Semester</th><th><u>VeranstId</u></th><th>VeranstName</th><th>VeranstFakultät</th></tr></thead><tbody><tr><td>123456</td><td>Klaus Meng</td><td>OMB</td><td>DM</td><td>2</td><td>1</td><td>C#</td><td>IN</td></tr><tr><td>123456</td><td>Klaus Meng</td><td>OMB</td><td>DM</td><td>2</td><td>2</td><td>Zeichnen</td><td>DM</td></tr><tr><td>234567</td><td>Verena Rist</td><td>MIB</td><td>DM</td><td>6</td><td></td><td></td><td></td></tr></tbody></table> </div>
+<table><thead><tr><th><u>MatrikelNr</u></th><th>Name</th><th>Studiengang</th><th>Fakultät</th><th>Semester</th><th><u>VeranstId</u></th><th>VeranstName</th><th>VeranstFakultät</th></tr></thead><tbody><tr><td>123456</td><td>Klaus Meng</td><td>OMB</td><td>Business, Design &#x26; Media</td><td>2</td><td>1</td><td>C#</td><td>Computer Science &#x26; Applications</td></tr><tr><td>123456</td><td>Klaus Meng</td><td>OMB</td><td>Business, Design &#x26; Media</td><td>2</td><td>2</td><td>Zeichnen</td><td>Business, Design &#x26; Media</td></tr><tr><td>234567</td><td>Verena Rist</td><td>MIB</td><td>Computer Science &#x26; Applications</td><td>6</td><td></td><td></td><td></td></tr></tbody></table> </div>
 <h2 id="sql-basics">SQL Basics</h2>
 <p>SQL (Structured Query Language = Strukturierte Abfrage Sprache) ist eine Sprache, die zur Verwaltung relationaler Datenbanken verwendet wird.</p>
 <h5 id="datenbankmanagementsystem-für-relationale-datenbanken">Datenbankmanagementsystem für Relationale Datenbanken</h5>
